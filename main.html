@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainDiv" id="hebele">
+      <div class="secondDiv">
+        <h1 id="headerMark"></h1>
+        <div class="question">
+          <h6 id="headerQuestion">Adınız Nedir ?</h6>
+        </div>
+        <div class="answers">
+          <input type="radio" id="answerA" name="answers" />
+          <label id="answer1" for="answerA">asd</label>
+          <br />
+          <input type="radio" id="answerB" name="answers" />
+          <label id="answer2" for="answerB">asd</label>
+          <br />
+          <input type="radio" id="answerC" name="answers" />
+          <label id="answer3" for="answerC">asd</label>
+          <br />
+          <input type="radio" id="answerD" name="answers" />
+          <label id="answer4" for="answerD">asd</label>
+        </div>
+        <button onclick="sendAnswer()">Gönder</button>
+      </div>
+    </div>
+    <div id="beginTesting">
+      <label for="txtName">Adınız :</label>
+      <input id="txtName" type="text" required />
+      <label for="txtLastName">Soyadınız :</label>
+      <input id="txtLastName" type="text" required />
+      <label for="txtAge">Yaşınız :</label>
+      <input id="txtAge" type="text" required />
+      <select name="gender" id="txtGender" required>
+        <option value="">Seçiniz ...</option>
+        <option value="0">Erkek</option>
+        <option value="1">Kadın</option>
+      </select>
+      <button onclick="beginTests()">Kaydet</button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
